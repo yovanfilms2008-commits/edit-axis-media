@@ -272,6 +272,16 @@ a {
     font-weight: 600;
 }
 
+.hero-subtitle {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    letter-spacing: 2px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 2rem;
+    text-shadow: 0 0 10px rgba(126, 200, 227, 0.3);
+}
+
 .showreel-container {
     perspective: 1200px;
     width: 90%;
