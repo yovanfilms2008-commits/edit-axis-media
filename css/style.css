@@ -606,6 +606,7 @@ a {
     color: var(--text-color);
     font-size: 1.3rem;
     font-weight: 600;
+    font-variant-numeric: tabular-nums;
     transition: color 0.3s ease;
 }
 .contact-info a:hover {
