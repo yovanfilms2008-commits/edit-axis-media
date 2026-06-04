@@ -1029,4 +1029,7 @@ a {
     #rocket-scrollbar {
         right: 15px !important;
     }
+    .desktop-br {
+        display: none;
+    }
 }
