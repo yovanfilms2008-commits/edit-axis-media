@@ -838,6 +838,20 @@ a {
         width: 20px !important;
         height: 20px !important;
     }
+    
+    /* Background Ambient Satellites */
+    .satellite {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .sat-3 {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .sat-4 {
+        width: 20px !important;
+        height: 20px !important;
+    }
 
     /* Showreel */
     .showreel-section {
