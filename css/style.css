@@ -1024,9 +1024,9 @@ a {
     .rocket-hint {
         transform: scale(0.7);
         transform-origin: right top;
-        right: 0;
+        right: 15px !important;
     }
     #rocket-scrollbar {
-        right: 0;
+        right: 15px !important;
     }
 }

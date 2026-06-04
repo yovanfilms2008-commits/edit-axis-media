@@ -200,5 +200,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 rocketScrollbar.classList.remove('is-moving');
             }
         });
+
+        // Mobile Touch Events for Rocket Control
+        rocketScrollbar.addEventListener('touchstart', (e) => {
+            isDraggingRocket = true;
+            startY = e.touches[0].clientY;
+            startScrollY = window.scrollY;
+            rocketScrollbar.classList.add('is-moving');
+        }, {passive: true});
+
+        document.addEventListener('touchmove', (e) => {
+            if (!isDraggingRocket) return;
+            
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const availableHeight = window.innerHeight - 240;
+            
+            const deltaY = e.touches[0].clientY - startY;
+            const scrollRatioDelta = deltaY / availableHeight;
+            const scrollPixelDelta = scrollRatioDelta * maxScroll;
+            
+            window.scrollTo(0, startScrollY + scrollPixelDelta);
+            updateRocketPosition();
+            e.preventDefault(); 
+        }, {passive: false});
+
+        document.addEventListener('touchend', () => {
+            if (isDraggingRocket) {
+                isDraggingRocket = false;
+                rocketScrollbar.classList.remove('is-moving');
+            }
+        });
     }
 });
