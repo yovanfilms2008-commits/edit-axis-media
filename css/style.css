@@ -889,34 +889,93 @@ a {
     
     /* Footer & Contact */
     .footer-section {
-        padding: 4rem 1.5rem !important;
+        padding: 3rem 1rem !important;
     }
     .footer-content {
+        display: flex;
         flex-direction: column;
-        gap: 3rem;
+        justify-content: center;
         align-items: center;
+        width: 100%;
+        gap: 2.5rem;
         text-align: center;
+        margin: 0 auto;
     }
     .contact-info {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        justify-content: center;
+        width: 100%;
+        gap: 1.5rem;
     }
-    .contact-group {
-        align-items: center;
-    }
-    .contact-form-container {
-        max-width: 100%;
-    }
-    .form-title {
-        font-size: 1.5rem;
+    .contact-info h2 {
+        font-size: 2.2rem !important;
+        margin-bottom: 0;
         text-align: center;
     }
-    .form-row {
+    .contact-info a {
+        font-size: 1.1rem !important;
+        text-align: center;
+    }
+    .contact-group {
+        display: flex;
         flex-direction: column;
-        gap: 1.2rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .contact-heading {
+        font-size: 0.9rem !important;
+        text-align: center;
+    }
+    .social-icon {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    .social-icon svg {
+        width: 22px !important;
+        height: 22px !important;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1.5rem !important;
+    }
+    .contact-form-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.5rem !important;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-title {
+        font-size: 1.5rem !important;
+        text-align: center;
+        width: 100%;
+    }
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
     }
     .half-width {
         width: 100%;
+    }
+    .contact-form input,
+    .contact-form textarea,
+    .submit-btn {
+        width: 100%;
+        box-sizing: border-box;
     }
     
     /* UI Elements */
