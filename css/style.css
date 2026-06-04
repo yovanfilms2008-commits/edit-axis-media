@@ -816,15 +816,19 @@ a {
     .hero-section {
         min-height: 100vh !important;
     }
+    .hero-title-container {
+        top: 45% !important;
+    }
     .hero-title-container h1 {
         font-size: clamp(3rem, 15vw, 5rem) !important;
-        margin-top: 2rem !important;
+        margin-top: 5rem !important;
     }
     .hero-title-container p {
-        transform: translateY(2rem) !important;
+        transform: translateY(3rem) !important;
     }
     .solar-system {
-        transform: translate(-50%, -50%) rotateX(65deg) scale(0.4) !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) rotateX(65deg) scale(0.45) !important;
     }
 
     /* Showreel */
