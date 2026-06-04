@@ -830,6 +830,14 @@ a {
         top: 55% !important;
         transform: translate(-50%, -50%) rotateX(65deg) scale(0.35) !important;
     }
+    .satellite-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .satellite-icon svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
 
     /* Showreel */
     .showreel-section {
