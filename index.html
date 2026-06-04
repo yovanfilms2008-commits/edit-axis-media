@@ -303,24 +303,24 @@
             <div class="contact-form-container">
                 <h3 class="form-title desktop-title">QUESTIONS? SEND US A<br>MESSAGE. DON'T BE SHY</h3>
                 <h3 class="form-title mobile-title">QUESTIONS? SEND<br>US A MESSAGE.<br>DON'T BE SHY</h3>
-                <form class="contact-form" action="#" method="POST">
+                <form class="contact-form" action="https://formspree.io/f/mrevblle" method="POST">
                     <div class="form-group full-width">
                         <label>Name</label>
-                        <input type="text" placeholder="Jane Smith" class="hover-target" required>
+                        <input type="text" name="name" placeholder="Jane Smith" class="hover-target" required>
                     </div>
                     <div class="form-row">
                         <div class="form-group half-width">
                             <label>Email</label>
-                            <input type="email" placeholder="jane@gmail.com" class="hover-target" required>
+                            <input type="email" name="email" placeholder="jane@gmail.com" class="hover-target" required>
                         </div>
                         <div class="form-group half-width">
                             <label>Phone</label>
-                            <input type="tel" placeholder="Enter Your Phone Number" class="hover-target">
+                            <input type="tel" name="phone" placeholder="Enter Your Phone Number" class="hover-target">
                         </div>
                     </div>
                     <div class="form-group full-width">
                         <label>Message</label>
-                        <textarea rows="4" placeholder="Your Message" class="hover-target" required></textarea>
+                        <textarea name="message" rows="4" placeholder="Your Message" class="hover-target" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn hover-target">Submit</button>
                 </form>
