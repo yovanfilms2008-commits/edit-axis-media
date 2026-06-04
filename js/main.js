@@ -93,12 +93,16 @@ document.addEventListener('DOMContentLoaded', () => {
             centeredSlides: true,
             slidesPerView: 'auto',
             loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
             coverflowEffect: {
-                rotate: 0,
+                rotate: 10,
                 stretch: 0,
-                depth: 100,
-                modifier: 2,
-                slideShadows: false,
+                depth: 80,
+                modifier: 1,
+                slideShadows: true,
             },
             keyboard: {
                 enabled: true,
