@@ -814,10 +814,10 @@ a {
     
     /* Hero Section */
     .hero-section {
-        min-height: 100vh !important;
+        min-height: 75vh !important;
     }
     .hero-title-container {
-        top: 45% !important;
+        top: 38% !important;
     }
     .hero-title-container h1 {
         font-size: clamp(3rem, 15vw, 5rem) !important;
@@ -827,13 +827,13 @@ a {
         transform: translateY(3rem) !important;
     }
     .solar-system {
-        top: 50% !important;
+        top: 43% !important;
         transform: translate(-50%, -50%) rotateX(65deg) scale(0.45) !important;
     }
 
     /* Showreel */
     .showreel-section {
-        padding-top: 3rem !important;
+        padding-top: 1rem !important;
     }
     .tilt-content h1 {
         font-size: 2.5rem;
