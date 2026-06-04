@@ -232,3 +232,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// AJAX Form Submission
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(contactForm);
+        const submitBtn = contactForm.querySelector('.submit-btn');
+        const originalBtnText = submitBtn.innerText;
+        submitBtn.innerText = 'Sending...';
+        
+        try {
+            const response = await fetch(contactForm.action, {
+                method: contactForm.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                contactForm.reset();
+                formStatus.style.display = 'block';
+                formStatus.innerText = 'Message sent successfully! We will get back to you soon.';
+                formStatus.style.color = 'var(--accent-color)';
+                setTimeout(() => { formStatus.style.display = 'none'; }, 5000);
+            } else {
+                formStatus.style.display = 'block';
+                formStatus.innerText = 'Oops! There was a problem submitting your form.';
+                formStatus.style.color = '#ff4d4d';
+            }
+        } catch (error) {
+            formStatus.style.display = 'block';
+            formStatus.innerText = 'Oops! There was a problem submitting your form.';
+            formStatus.style.color = '#ff4d4d';
+        } finally {
+            submitBtn.innerText = originalBtnText;
+        }
+    });
+}
