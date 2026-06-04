@@ -800,33 +800,126 @@ a {
     .nav-links a {
         font-size: 0.8rem;
     }
+    
+    /* Global Section Spacing */
+    .section {
+        min-height: auto !important;
+        padding: 4rem 1.5rem !important;
+    }
+    .section-title {
+        font-size: 2.5rem !important;
+        margin-bottom: 2rem !important;
+        text-align: center;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        min-height: 100vh !important;
+    }
     .hero-title-container h1 {
         font-size: clamp(3rem, 15vw, 5rem) !important;
-        margin-top: 3rem !important;
+        margin-top: 2rem !important;
+    }
+    .hero-title-container p {
+        transform: translateY(2rem) !important;
     }
     .solar-system {
-        transform: translate(-50%, -50%) rotateX(65deg) scale(0.35) !important;
+        transform: translate(-50%, -50%) rotateX(65deg) scale(0.4) !important;
     }
-    .section {
-        padding: 4rem 1.5rem;
+
+    /* Showreel */
+    .showreel-section {
+        padding-top: 3rem !important;
     }
     .tilt-content h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
+    
+    /* Services */
     .services-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
+    .glass-panel {
+        padding: 2rem 1.5rem;
+    }
+    
+    /* Skillset Film Reel */
+    .skillset-section {
+        padding: 3rem 0 !important;
+    }
+    .film-reel-container {
+        height: 300px;
+    }
+    .film-reel-container::before,
+    .film-reel-container::after {
+        top: -10px; bottom: -10px;
+    }
+    .camera-roll {
+        width: 40px;
+    }
+    .roll-text {
+        font-size: 0.7rem;
+    }
+    .roll-cylinder {
+        width: 20px;
+        top: -10px; bottom: -10px;
+    }
+    .left-roll .roll-cylinder { right: 10px; }
+    .right-roll .roll-cylinder { left: 10px; }
+    .perforations {
+        height: 15px;
+        background-size: 20px 100%;
+        background-image: repeating-linear-gradient(90deg, transparent, transparent 10px, var(--bg-color) 10px, var(--bg-color) 15px, transparent 15px, transparent 20px);
+    }
+    .swiper-slide {
+        width: 150px;
+        height: 296px;
+        padding: 15px 0;
+    }
+    
+    /* Team */
     .team-grid {
-        gap: 2rem;
+        gap: 3rem;
     }
     .circular-photo {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
+    }
+    
+    /* Footer & Contact */
+    .footer-section {
+        padding: 4rem 1.5rem !important;
     }
     .footer-content {
         flex-direction: column;
+        gap: 3rem;
+        align-items: center;
         text-align: center;
     }
+    .contact-info {
+        align-items: center;
+        gap: 2rem;
+    }
+    .contact-group {
+        align-items: center;
+    }
+    .contact-form-container {
+        max-width: 100%;
+    }
+    .form-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .half-width {
+        width: 100%;
+    }
+    
+    /* UI Elements */
     .social-links {
         justify-content: center;
     }
