@@ -794,6 +794,10 @@ a {
     100% { transform: scaleY(1.4); opacity: 1; }
 }
 
+.mobile-title {
+    display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {
@@ -1031,5 +1035,11 @@ a {
     }
     .desktop-br {
         display: none;
+    }
+    .desktop-title {
+        display: none !important;
+    }
+    .mobile-title {
+        display: block !important;
     }
 }
