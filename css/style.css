@@ -801,6 +801,9 @@ a {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .cursor {
+        display: none !important;
+    }
     .navbar {
         padding: 1rem;
         flex-direction: column;
